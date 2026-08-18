@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #f8fafc;
+}
+
+.card {
+  @apply bg-white rounded-2xl shadow-sm border border-slate-100 p-6;
+}
+
+.btn-primary {
+  @apply bg-primary-600 hover:bg-primary-700 text-white font-medium px-4 py-2 rounded-xl transition-colors;
+}
+
+.input-field {
+  @apply w-full border border-slate-200 rounded-xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent;
+}
+
+/* Flexbox-based icon input: the icon and the <input> are normal flex
+   siblings, not absolutely positioned. This makes overlap structurally
+   impossible — no pixel-padding math to get wrong, no browser-injected
+   icon can land in the same spot as the text. */
+.input-icon-wrap {
+  @apply w-full flex items-center gap-2.5 border border-slate-200 rounded-xl px-3.5 py-2 bg-white transition-colors;
+}
+.input-icon-wrap:focus-within {
+  @apply ring-2 ring-primary-500 border-transparent;
+}
+.input-icon-wrap.input-error {
+  @apply border-red-300;
+}
+.input-icon-wrap.input-error:focus-within {
+  @apply ring-red-400;
+}
+.input-icon-wrap input {
+  @apply flex-1 min-w-0 border-0 outline-none bg-transparent p-0 text-slate-800 placeholder:text-slate-400;
+}
+
+/* Edge/IE inject their own password reveal + clear icons inside the field,
+   which collide with our custom icons. Hide them. */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+/* Chromium (Chrome/Edge) injects its own autofill/credentials icon inside
+   password, email, and text fields — hide it so it can't stack with ours. */
+input::-webkit-credentials-auto-fill-button,
+input::-webkit-caps-lock-indicator {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+}
