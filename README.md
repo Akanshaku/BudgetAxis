@@ -101,9 +101,4 @@ Once both are live, update `CLIENT_URL` on Render to match your Vercel domain (f
 | DELETE | `/api/transactions/:id` | Delete transaction |
 | GET | `/api/transactions/summary` | Aggregated analytics (`month`, `year` query params) |
 
-## Resume Bullet Points
 
-- Built a full-stack MERN expense tracker with JWT authentication and MongoDB aggregation pipelines powering real-time spending analytics
-- Designed RESTful APIs with role-scoped data access and date-range/category filtering
-- Implemented interactive data visualizations (Recharts) for category breakdown and 6-month income vs. expense trends
-- Added budget-tracking feature with automatic over-budget alerts, calculated server-side
