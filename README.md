@@ -71,7 +71,7 @@ App runs on `http://localhost:5173`.
 
 ## Deployment
 
-### Backend → Render (or Railway)
+### Backend → Render
 
 1. Push this repo to GitHub
 2. On Render: New → Web Service → connect repo, root directory `server`
