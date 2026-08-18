@@ -1,4 +1,4 @@
-# Expensify — MERN Expense & Budget Tracker
+# BudgetAxis — MERN Expense & Budget Tracker
 
 A full-stack expense tracker built with MongoDB, Express, React, and Node.js.
 Features JWT authentication, MongoDB aggregation-powered analytics, budget alerts,
