@@ -1,6 +1,6 @@
 # BudgetAxis — MERN Expense & Budget Tracker
 
-** Live Demo:** https://budgetaxis.vercel.app
+Live Demo:https://budgetaxis.vercel.app
 
 A full-stack expense tracker built with MongoDB, Express, React, and Node.js.
 Features JWT authentication, MongoDB aggregation-powered analytics, budget alerts,
