@@ -1,6 +1,6 @@
 # BudgetAxis — MERN Expense & Budget Tracker
 
-**🔗 Live Demo:** https://budgetaxis.vercel.app
+** Live Demo:** https://budgetaxis.vercel.app
 
 A full-stack expense tracker built with MongoDB, Express, React, and Node.js.
 Features JWT authentication, MongoDB aggregation-powered analytics, budget alerts,
@@ -8,12 +8,12 @@ category filtering, and interactive charts (Recharts).
 
 ## Features
 
-- 🔐 JWT authentication (register/login)
-- 💸 Add / edit / delete income & expense transactions
-- 📊 Dashboard with pie chart (spending by category) and 6-month income vs. expense bar chart
-- 🎯 Monthly budget setting with over-budget alert banner
-- 🔍 Filter transactions by type, category, and date range
-- ⚡ Backend analytics computed via MongoDB aggregation pipelines (not client-side loops)
+-  JWT authentication (register/login)
+-  Add / edit / delete income & expense transactions
+-  Dashboard with pie chart (spending by category) and 6-month income vs. expense bar chart
+-  Monthly budget setting with over-budget alert banner
+-  Filter transactions by type, category, and date range
+-  Backend analytics computed via MongoDB aggregation pipelines (not client-side loops)
 
 ## Tech Stack
 
